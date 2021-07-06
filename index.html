@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <title>Questionnaire</title>
+</head>
+<body>
+    <!-- NAV -->
+        <nav>
+        <ul class="navbar">
+            <li><a href="#personal"  class="links">Личная информация</a></li>
+            <li><a href="#experience" class="links">Опыт</a></li>
+            <li><a href="#js" class="links">JavaScript</a></li>
+            <li><a href="#about" class="links">О себе</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <div class="line"></div>
+
+
+    <!-- PERSONAL INFO -->
+    <section class="personal" id="personal">
+    <h1 class="personal-mainheader">Анкета</h1>
+    <img src="./img/icon.svg" alt="personal-icon">
+    <h3 class="personal-header">Личная информация</h3>
+
+    <div class="form__group field">
+        <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+        <label for="name" class="form__label">ФИО</label>
+    </div>
+
+    <!-- YEAR DROPDOWN -->
+    <details class="custom-select">
+        <summary class="radios">
+    <input type="radio" name="item" id="default" title="Год рождения" checked style=" outline:none; ">
+            <input type="radio" name="item" id="2003" title="2003">
+            <input type="radio" name="item" id="2002" title="2002">
+            <input type="radio" name="item" id="2001" title="2001">
+            <input type="radio" name="item" id="2000" title="2000">
+            <input type="radio" name="item" id="1999" title="1999">
+            <input type="radio" name="item" id="1998" title="1998">
+            <input type="radio" name="item" id="1997" title="1997">
+            <input type="radio" name="item" id="1996" title="1996">
+            <input type="radio" name="item" id="1995" title="1995">
+            <input type="radio" name="item" id="1994" title="1994">
+            <input type="radio" name="item" id="1993" title="1993">
+            <input type="radio" name="item" id="1992" title="1992">
+            <input type="radio" name="item" id="1991" title="1991">
+            <input type="radio" name="item" id="1990" title="1990">
+            <input type="radio" name="item" id="1989" title="1989">
+            <input type="radio" name="item" id="1988" title="1988">
+            <input type="radio" name="item" id="1987" title="1987">
+            <input type="radio" name="item" id="1986" title="1986">
+            <input type="radio" name="item" id="1985" title="1985"> 
+        </summary>
+        <ul class="list">
+            <li>
+                <label for="2003">2003</label>
+            </li>
+            <li>
+                <label for="2002">2002</label>
+            </li>
+            <li>
+                <label for="2001">2001</label>
+            </li>
+            <li>
+                <label for="2000">2000</label>
+            </li>
+            <li>
+                <label for="1999">1999</label>
+            </li>
+            <li>
+                <label for="1998">1998</label>
+            </li>
+            <li>
+                <label for="1997">1997</label>
+            </li>
+            <li>
+                <label for="1996">1996</label>
+            </li>
+            <li>
+                <label for="1995">1995</label>
+            </li>
+            <li>
+                <label for="1994">1994</label>
+            </li>
+            <li>
+                <label for="1993">1993</label>
+            </li>
+            <li>
+                <label for="1992">1992</label>
+            </li>
+            <li>
+                <label for="1991">1991</label>
+            </li>
+            <li>
+                <label for="1990">1990</label>
+            </li>
+            <li>
+                <label for="1989">1989</label>
+            </li>
+            <li>
+                <label for="1988">1988</label>
+            </li>
+            <li>
+                <label for="1987">1987</label>
+            </li>
+            <li>
+                <label for="1986">1986</label>
+            </li>
+            <li>
+                <label for="1985">1985</label>
+            </li>
+        </ul>
+    </details>
+    <!-- DROPDOWN END -->
+
+    <div class="form__group field">
+        <input type="input" class="form__field" placeholder="place" name="place" id='place' required />
+        <label for="place" class="form__label">Место проживания</label>
+    </div>
+
+    <div class="form__group field">
+        <input type="input" class="form__field" placeholder="skype" name="skype" id='skype' required />
+        <label for="skype" class="form__label">Skype</label>
+    </div>
+
+    <div class="form__group field">
+        <input type="input" class="form__field" placeholder="email" name="email" id='email' required />
+        <label for="email" class="form__label">E-mail</label>
+    </div>
+</section>
+    
+
+    <!-- EXPERIENCE -->
+    <section class="experience" id="experience">
+    <img src="./img/experience.svg" alt="experience">
+    <h3 class="experience-header">Расскажите о своём опыте</h3>
+    <div class="experience-checklist">
+        <div class="column">
+            <label class="checkbox">
+                <span class="checkbox__input">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox__control">
+                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='-5 -5 35 35' aria-hidden="true" focusable="false">
+                      <path fill='none' stroke='#ffffff' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' /></svg>
+                  </span>
+                </span>
+                <span class="radio__label">БЭМ/OOCSS</span>
+              </label><br>
+              <label class="checkbox">
+                <span class="checkbox__input">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox__control">
+                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='-5 -5 35 35' aria-hidden="true" focusable="false">
+                      <path fill='none' stroke='#ffffff' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' /></svg>
+                  </span>
+                </span>
+                <span class="radio__label">Stylus/LESS/SASS</span>
+              </label><br>
+              <label class="checkbox">
+                <span class="checkbox__input">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox__control">
+                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='-5 -5 35 35' aria-hidden="true" focusable="false">
+                      <path fill='none' stroke='#ffffff' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' /></svg>
+                  </span>
+                </span>
+                <span class="radio__label">Работаю с SVG</span>
+              </label><br>
+        </div>
+        <div class="column">
+            <label class="checkbox">
+              <span class="checkbox__input">
+                <input type="checkbox" name="checkbox">
+                <span class="checkbox__control">
+                  <svg xmlns='http://www.w3.org/2000/svg' viewBox='-5 -5 35 35' aria-hidden="true" focusable="false">
+                    <path fill='none' stroke='#ffffff' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' /></svg>
+                </span>
+              </span>
+              <span class="radio__label">Верстаю семантично</span>
+            </label><br>
+            <label class="checkbox">
+              <span class="checkbox__input">
+                <input type="checkbox" name="checkbox">
+                <span class="checkbox__control">
+                  <svg xmlns='http://www.w3.org/2000/svg' viewBox='-5 -5 35 35' aria-hidden="true" focusable="false">
+                    <path fill='none' stroke='#ffffff' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' /></svg>
+                </span>
+              </span>
+              <span class="radio__label">ES2015/ES2016</span>
+            </label><br>
+            <label class="checkbox">
+              <span class="checkbox__input">
+                <input type="checkbox" name="checkbox">
+                <span class="checkbox__control">
+                  <svg xmlns='http://www.w3.org/2000/svg' viewBox='-5 -5 35 35' aria-hidden="true" focusable="false">
+                    <path fill='none' stroke='#ffffff' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' /></svg>
+                </span>
+              </span>
+              <span class="radio__label">Gulp/GRUNT</span>
+            </label><br>
+        </div>
+        <div class="column">
+            <label class="checkbox">
+              <span class="checkbox__input">
+                <input type="checkbox" name="checkbox">
+                <span class="checkbox__control">
+                  <svg xmlns='http://www.w3.org/2000/svg' viewBox='-5 -5 35 35' aria-hidden="true" focusable="false">
+                    <path fill='none' stroke='#ffffff' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59'/></svg>
+                </span>
+              </span>
+              <span class="radio__label">Webpack</span>
+            </label><br>
+            <label class="checkbox">
+              <span class="checkbox__input">
+                <input type="checkbox" name="checkbox">
+                <span class="checkbox__control">
+                  <svg xmlns='http://www.w3.org/2000/svg' viewBox='-5 -5 35 35' aria-hidden="true" focusable="false">
+                    <path fill='none' stroke='#ffffff' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' /></svg>
+                </span>
+              </span>
+              <span class="radio__label">jQuery</span>
+            </label><br>
+            <label class="checkbox">
+              <span class="checkbox__input">
+                <input type="checkbox" name="checkbox">
+                <span class="checkbox__control">
+                  <svg xmlns='http://www.w3.org/2000/svg' viewBox='-5 -5 35 35' aria-hidden="true" focusable="false">
+                    <path fill='none' stroke='#ffffff' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' /></svg>
+                </span>
+              </span>
+              <span class="radio__label">Использую Git</span>
+            </label><br>
+        </div>
+    </div>
+</section>
+   
+
+    <!-- JS -->
+        <section class="js" id="js">
+        <img src="./img/js.svg" alt="js">
+        <h3 class="js-header">Уровень владения JavaScript</h3>
+<!-- Make 4 pieces of text w/choices -->
+
+<div class="options">
+    <p style="align-self: end;">Не владею</p>
+    <p>Использую готовые <br> решения</p>
+    <p>Использую готовые решения <br> и умею переделывать</p>
+    <p style="grid-column-start: none; align-self: end;">Пишу сложный JS с нуля</p>
+</div>
+
+<div class="borders">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div style="border-left: none; border-right: 1px dotted #b7b7b7"></div>
+</div>
+<div class="shape"></div>
+
+<input type="range" id="weight" min="0" value="1" max="3" step="1" list="volsettings">
+<datalist id="volsettings">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  </datalist>
+
+  <!-- <div class="optionSelected"></div> -->
+
+    </section>
+
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+    <img src="./img/about.svg" alt="">
+    <h3 class="about-header">Расскажите о себе</h3>
+    <h6 class="about-description">Напишите несколько предложений, чем привлекла наша вакансия<br>и что вы ожидаете от работы у нас.</h6>
+    <textarea name="reason" id="reason" placeholder="Понравилась тем, что..."></textarea>
+</section>
+
+<button type="submit">Готово</button>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/app.min.js"></script>
+</html>
